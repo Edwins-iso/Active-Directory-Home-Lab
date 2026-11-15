@@ -154,8 +154,9 @@ Finding Policy Settings:<br/>
 <br />
 <br />
 <p align="center">
-Have fun with it and create more policied!:<br/>
+Have fun with it and create more policies!:<br/>
 <p align="center">
+Next we'll test the client PC and make sure the policies are working properly!
 <br />
 <br />
 <!--
