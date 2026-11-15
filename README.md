@@ -13,8 +13,8 @@ In this project, I installed Active Directory on a Windows Server 2025 Virtual M
 
 <h2>Environments Used </h2>
 
-- <b>Windows 11</b>
-- <b>Windows Server 2025</b>
+- <b>Windows 11 (Client)</b>
+- <b>Windows Server 2025 (Domain Controller)</b>
 
 <h2>Project Diagram:</h2>
 <p align="center">
@@ -22,7 +22,7 @@ In this project, I installed Active Directory on a Windows Server 2025 Virtual M
 
 <p align="center">
 
-<h2>Project walk-through:</h2>
+<h2>AD DC walk-through:</h2>
 
 <p align="center">
 Install and Launch Virtual Box: <br/>
@@ -33,7 +33,6 @@ Create a new Virtual Machine and configure settings:  <br/>
 <img src="https://imgur.com/TNxihu3.png" height="80%" width="80%" alt="VM Creation Prompt"/>
 
 - Important Settings: 4 Cores, 4GB Ram, 1 NAT Adapter, 1 Internal Network Adapter
-  
 <br />
 <br />
 <p align="center">
@@ -110,7 +109,55 @@ Check for the Clients IP Address on the Domain Controllers DHCP and Active Direc
 - The next project within this Active Directory will be to setup and configure Group Policy Management!
 <br />
 <br />
+<h2>GPO Management:</h2>
+<p align="center">
+Add Group Policy Manager Feature:<br/>
+<p align="center">
+<img src="https://imgur.com/i9yHD69.png" height="60%" width="60%" alt="GPO Install"/>
+<br />
+<br />
+<p align="center">
+Navigate to the GPO Manager:<br/>
+<p align="center">
+<img src="https://imgur.com/spEVJmh.png" height="20%" width="20%" alt="GPO Install"/>
 
+- Next we just need to add some policies!
+<br />
+<br />
+<p align="center">
+Adding Policies | Password Policy Example:<br/>
+<p align="center">
+<img src="https://imgur.com/abZKc2n.png" height="80%" width="80%" alt="GPO Creation"/>
+
+- Right click the domain that you would like to add a policy to and select "new GPO"
+- Enter a name related to the policy you will be activating (Password Policy in this case).
+- Click OK.
+<br />
+<br />
+<p align="center">
+Finding Policy Settings:<br/>
+<p align="center">
+<img src="https://imgur.com/spzrwP9.png" height="80%" width="80%" alt="GPO Creation"/>
+
+- Navigating the policy manager requires just a bit of little bit of logical reasoning.
+- Since we will be adding a password policy, we will follow this path Computer Configuration>Windows Settings>Security Settings>Account Policies>Password Policy
+- Enable the policy
+<p align="center">
+<img src="https://imgur.com/wPu0kt7.png" height="80%" width="80%" alt="GPO Creation"/>
+  
+- Now adjust the policy settings to your preference.
+<p align="center">
+<img src="https://imgur.com/spzrwP9.png" height="50%" width="50%" alt="GPO Creation"/>
+<img src="https://imgur.com/17JSDND.png" height="50%" width="50%" alt="GPO Creation"/>
+<img src="https://imgur.com/q9rlD2O.png" height="50%" width="50%" alt="GPO Creation"/>
+<img src="https://imgur.com/ctjy805.png" height="50%" width="50%" alt="GPO Creation"/>
+<br />
+<br />
+<p align="center">
+Have fun with it and create more policied!:<br/>
+<p align="center">
+<br />
+<br />
 <!--
  ```diff
 - text in red
