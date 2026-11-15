@@ -3,7 +3,7 @@
 <h2>Description</h2>
 (Documentation in progress) 
 
-In this project, I installed Active Directory on a Windows Server 2025 Virtual Machine. I assigned two network adapters to the domain controller to allow a Client virtual machine, running windows 11, to connect to the Domain Controller through remote access. I also set up DHCP on the domain controller to allow the client network to automatically be assigned an IP address. 
+In this project, I installed Active Directory on a Windows Server 2025 Virtual Machine. I assigned two network adapters to the domain controller to allow a Client virtual machine, running windows 11, to connect to the Domain Controller through remote access. I also set up DHCP on the domain controller to allow the client network to automatically be assigned an IP address. Once set-up, I installed Group Policy management. I then configured multiple policies to the domain and tested the Client PC to ensure the policies were functioning properly.
 <br />
 
 
